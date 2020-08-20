@@ -12,6 +12,8 @@ describe('Quotes App', () => {
 
     it('can type something in the "text" input', () => {
       cy.get('input[name="text"]')
+        .type('Have fun')
+        .should('have.value', 'Have fun')
     })
   })
 })
