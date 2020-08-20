@@ -5,6 +5,8 @@ function foo(params) {
 // write tests here
 describe('Quotes App', () => {
   describe('Inputs and submit button', () => {
-    test('')
+    test('Returns the string "foo"', () => {
+      expect(foo()).to.eq('foo')
+    })
   })
 })
