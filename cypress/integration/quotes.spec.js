@@ -44,7 +44,10 @@ describe('Quotes App', () => {
     })
 
     it('can submit a new quote', () => {
+      // fill out both inputs text and author
+      // click submit
       // 
+
     })
   })
 })
