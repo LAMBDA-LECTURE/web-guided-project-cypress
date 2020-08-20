@@ -25,6 +25,8 @@ describe('Quotes App', () => {
         .should('have.value', 'pogChamp')
     })
 
-    
+    it('submit button is enabled', () => {
+      cy.get('#submitBtn').should('be.enabled')
+    })
   })
 })
