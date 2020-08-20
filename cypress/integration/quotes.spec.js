@@ -1,4 +1,4 @@
-function foo(params) {
+function foo(arg) {
   return 'foo'
 }
 
