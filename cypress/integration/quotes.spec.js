@@ -41,8 +41,10 @@ describe('Quotes App', () => {
   describe('Submitting a new quote', () => {
     it('can navigate to http://localhost:1234', () => {
       cy.visit('http://localhost:1234')
-      cy.url().should('include', 'localhost')
     })
 
+    it('can submit a new quote', () => {
+      // 
+    })
   })
 })
