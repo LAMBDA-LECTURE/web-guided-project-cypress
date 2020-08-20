@@ -15,5 +15,13 @@ describe('Quotes App', () => {
         .type('Have fun')
         .should('have.value', 'Have fun')
     })
+
+    it('Can Type Something In The "author" input', () => {
+      //get the input
+      cy.get('input[name="author"]')
+        //type into text bar
+        .type('pogChamp')
+        //Checks to make sure you passed 'pogChamp' into the text bar
+        .should('have.value', 'pogChamp')
+    })
   })
-})
