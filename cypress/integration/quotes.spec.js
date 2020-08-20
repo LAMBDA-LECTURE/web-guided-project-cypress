@@ -49,11 +49,7 @@ describe('Quotes App', () => {
       cy.visit('http://localhost:1234')
     })
 
-    it('can submit a new quote', () => {
-      // fill out both inputs text and author
-      // click submit
-      // check than an element exists which contains that text and auther as textContent
-      // cy.contains('foo').should('exist')
+    it('can submit and delete a new quote', () => {
       textInput().type('Have fun')
       authorInput().type('Lambda')
       submitButton().click()
