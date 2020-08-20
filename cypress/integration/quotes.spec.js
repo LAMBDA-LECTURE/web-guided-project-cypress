@@ -6,6 +6,8 @@ describe('Quotes App', () => {
       cy.url().should('include', 'localhost')
     })
 
-    // it()
+    it('the submit button is disabled', () => {
+      
+    })
   })
 })
