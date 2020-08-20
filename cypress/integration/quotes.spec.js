@@ -1,7 +1,8 @@
 // write tests here
 describe('Quotes App', () => {
 
-  const textInput = () => 
+  const textInput = () => cy.get('input[name="text"]')
+  const authorInput = () => cy.get('input[name="author"]')
 
 
   describe('Inputs, submit button cancel button', () => {
