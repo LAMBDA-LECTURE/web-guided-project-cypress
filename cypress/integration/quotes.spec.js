@@ -1,5 +1,9 @@
 // write tests here
 describe('Quotes App', () => {
+
+  const textInput = () => 
+
+
   describe('Inputs, submit button cancel button', () => {
     it('can navigate to http://localhost:1234', () => {
       cy.visit('http://localhost:1234')
