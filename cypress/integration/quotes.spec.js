@@ -1,4 +1,5 @@
 function foo(arg) {
+  if (arg === 5) return 'five'
   return 'foo'
 }
 
