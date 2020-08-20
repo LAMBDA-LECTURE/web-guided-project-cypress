@@ -3,6 +3,7 @@ describe('Quotes App', () => {
 
   const textInput = () => cy.get('input[name="text"]')
   const authorInput = () => cy.get('input[name="author"]')
+  const submitButton = () => cy.get('#submitBtn')
 
 
   describe('Inputs, submit button cancel button', () => {
@@ -53,9 +54,9 @@ describe('Quotes App', () => {
       // click submit
       // check than an element exists which contains that text and auther as textContent
       // cy.contains('foo').should('exist')
-      cy.get('input[name="text"]').type('Have fun')
-      cy.get('input[name="author"]').type('Lambda')
-      cy.get('#submitBtn').click()
+      textInput().type('Have fun')
+      authorInput().type('Lambda')
+      submitButton().click()
       cy.contains('Have fun (Lambda)').should('exist')
       cy.contains('Have fun (Lambda)').next().next().click()
     })
