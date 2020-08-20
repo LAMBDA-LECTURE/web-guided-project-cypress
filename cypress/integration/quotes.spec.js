@@ -24,5 +24,7 @@ describe('Quotes App', () => {
         //Checks to make sure you passed 'pogChamp' into the text bar
         .should('have.value', 'pogChamp')
     })
+
+    
   })
 })
