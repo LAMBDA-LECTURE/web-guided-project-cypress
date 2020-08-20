@@ -28,5 +28,10 @@ describe('Quotes App', () => {
     it('submit button is enabled', () => {
       cy.get('#submitBtn').should('be.enabled')
     })
+
+    it('cancel button empties out both inputs', () => {
+      // all you!
+    })
+
   })
 })
