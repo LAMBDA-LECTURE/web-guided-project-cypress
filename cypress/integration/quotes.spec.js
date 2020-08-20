@@ -30,7 +30,11 @@ describe('Quotes App', () => {
     })
 
     it('cancel button empties out both inputs', () => {
-      // all you!
+      cy.get("#cancelBtn").click()
+      cy.get("input[name='text']").should("have.value", "");
+      cy.get("input[name='author']"
+        .should("have.value", "");
+      cy.get("#submitBtn").should("be.disabled");
     })
 
   })
