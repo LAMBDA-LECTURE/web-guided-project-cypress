@@ -1,5 +1,5 @@
 function foo(arg) {
-  if (arg === 5) return 'five'
+  if (arg) return 'five'
   return 'foo'
 }
 
@@ -11,6 +11,9 @@ describe('Quotes App', () => {
       expect(foo()).not.to.eq('bar')
     })
     it('Returns the string "five" if passed a truthy arg', () => {
+
+    })
+    it('Returns the string "foo" if passed a falsy arg', () => {
 
     })
   })
