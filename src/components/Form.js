@@ -17,10 +17,10 @@ export default function Form(props) {
   }
 
   const onSubmit = evt => {
-    // evt.preventDefault()
-    // values.id
-    //   ? putQuote(values)
-    //   : postQuote(values)
+    evt.preventDefault()
+    values.id
+      ? putQuote(values)
+      : postQuote(values)
   }
 
   const onChange = evt => {
