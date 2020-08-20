@@ -5,6 +5,9 @@ describe('Quotes App', () => {
   const authorInput = () => cy.get('input[name="author"]')
   const submitButton = () => cy.get('#submitBtn')
 
+  beforeEach(() => {
+    // automate cleanup
+  })
 
   describe('Inputs, submit button cancel button', () => {
     it('can navigate to http://localhost:1234', () => {
