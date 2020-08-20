@@ -6,7 +6,7 @@ function foo(params) {
 describe('Quotes App', () => {
   describe('Inputs and submit button', () => {
     it('Returns the string "foo"', () => {
-      expect(foo()).to.eq('foo')
+      expect(foo()).to.eq('fooooooooooooooooooooooooooo')
       expect(foo()).not.to.eq('bar')
     })
   })
