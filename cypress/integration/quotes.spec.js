@@ -46,8 +46,8 @@ describe('Quotes App', () => {
     it('can submit a new quote', () => {
       // fill out both inputs text and author
       // click submit
-      // 
-
+      // check than an element exists which contains that text and auther as textContent
+      // cy.contains('foo')
     })
   })
 })
