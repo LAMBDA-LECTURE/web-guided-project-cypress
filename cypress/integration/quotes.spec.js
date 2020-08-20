@@ -7,7 +7,9 @@ describe('Quotes App', () => {
     })
 
     it('the submit button is disabled', () => {
-      cy.get('#submitBtn').should('not.be.disabled')
+      cy.get('#submitBtn').should('be.disabled')
     })
+
+    
   })
 })
