@@ -10,5 +10,8 @@ describe('Quotes App', () => {
       expect(foo()).to.eq('foo')
       expect(foo()).not.to.eq('bar')
     })
+    it('Returns the string "five" if passed a truthy arg', () => {
+
+    })
   })
 })
