@@ -48,16 +48,10 @@ describe('Quotes App', () => {
       // click submit
       // check than an element exists which contains that text and auther as textContent
       // cy.contains('foo').should('exist')
-      it('can submit a new quote', () => {
-        cy.get('input[name="text"]')
-          .type('Have fun')
-          .should('have.value', 'Have fun')
-        cy.get('input[name="author"]')
-          .type('Lambda')
-          .should('have.value', 'Lambda')
-        cy.get('#submitBtn').click()
-        cy.contains('Have fun (Lambda)').should('exist')
-      })
+      cy.get('input[name="text"]').type('Have fun')
+      cy.get('input[name="author"]').type('Lambda')
+      cy.get('#submitBtn').click()
+      cy.contains('Have fun (Lambda)').should('exist')
     })
   })
 })
