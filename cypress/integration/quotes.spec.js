@@ -58,4 +58,11 @@ describe('Quotes App', () => {
       cy.contains('Have fun (Lambda)').should('not.exist')
     })
   })
+
+  describe('Editing an existing quote', () => {
+    // add a new one
+    // click edit
+    // add your edits
+    //
+  })
 })
