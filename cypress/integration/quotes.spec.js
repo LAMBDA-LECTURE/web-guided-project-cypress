@@ -55,6 +55,7 @@ describe('Quotes App', () => {
       submitButton().click()
       cy.contains('Have fun (Lambda)').should('exist')
       cy.contains('Have fun (Lambda)').next().next().click()
+      cy.contains('Have fun (Lambda)').should('not.exist')
     })
   })
 })
