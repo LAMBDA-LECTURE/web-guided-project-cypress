@@ -10,6 +10,8 @@ describe('Quotes App', () => {
       cy.get('#submitBtn').should('be.disabled')
     })
 
-    
+    it('can type something in the "text" input', () => {
+      cy.get()
+    })
   })
 })
