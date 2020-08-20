@@ -63,6 +63,8 @@ describe('Quotes App', () => {
     // add a new one
     // click edit
     // add your edits
-    //
+    // click submit
+    // assert that the edits took
+    // clean after yourself!
   })
 })
