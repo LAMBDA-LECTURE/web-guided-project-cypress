@@ -52,7 +52,7 @@ describe('Quotes App', () => {
       cy.get('input[name="author"]').type('Lambda')
       cy.get('#submitBtn').click()
       cy.contains('Have fun (Lambda)').should('exist')
-      cy.contains('Have fun (Lambda)').next().next()
+      cy.contains('Have fun (Lambda)').next().next().click()
     })
   })
 })
